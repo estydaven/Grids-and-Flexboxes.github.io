@@ -12,6 +12,8 @@ footer {
   grid-area: footer; }
 
 .container {
+  max-width: 1000px;
+  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 3fr 1fr;
@@ -22,19 +24,16 @@ footer {
 header {
   display: -ms-grid;
   display: grid;
+  grid-area: header;
+  padding: 20px 0;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr; }
   header nav {
     justify-self: start;
-    list-style: none;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto 1fr 1fr;
-        grid-template-columns: auto 1fr 1fr;
-    -webkit-box-align: end;
-    -webkit-align-items: end;
-        -ms-flex-align: end;
-            align-items: end; }
+    list-style: none; }
+    header nav li {
+      display: inline-block;
+      margin-right: 15px; }
   header button {
     justify-self: end; }
 
