@@ -1,3 +1,10 @@
+body{
+    font: 14px Roboto;
+    margin: 0;
+    padding: 0;
+    list-style: none;    
+}
+
 header{
     grid-area: header;
 }
@@ -24,22 +31,94 @@ footer{
 }
 
 header{
-    display: grid;
-    grid-area: header;
+    display: grid;    
     padding: 20px 0;
     grid-template-columns: 1fr 1fr;
+    background-color: #4e5871;    
 
     nav{
         justify-self: start;    
         list-style: none;
+        padding: 10px;
 
         li{
             display: inline-block;
             margin-right: 15px;
+
+            a{
+                text-decoration: none;
+                color: #ebeced;
+                transition: .5s;
+
+                &:hover{
+                    color: #9fa6ad;                    
+                }
+            }            
         }
     }
     button{
         justify-self: end;
+        height: 40px; 
+        margin-right: 20px;
+        width: 80px;
+        margin-top: 20px;
+        background-color: #acb3b9;    
+        border-radius: 4px;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        transition: .5s;
+
+        &:hover{
+            background: transparent;
+            border: 1px solid #acb3b9;
+            color: #ebeced;
+        }   
+    }
+}
+
+.main img{
+    width: 100%;
+}
+
+h2, h3{
+    color: #3C3C3A;
+}
+
+.sidebar {
+    border: 1px solid #acb3b9;
+    h3{
+        margin-left: 10px;
+    }
+    nav{
+        margin-left: 10px;
+    }
+    a{
+    text-decoration: none;
+    color: #4e5871;
+    transition: .5s;
+        &:hover{
+            color: #9fa6ad;                    
+        }
+    }    
+}
+
+footer{
+    background-color: #4e5871;
+
+    h3{
+        color: #ebeced;
+        transition: .5s;
+        cursor: pointer;
+        margin-left: 10px;
+
+        &:hover{
+            color: #9fa6ad;                    
+        }
+    }
+    p{
+        color: #ebeced;
+        margin-left: 10px;
     }
 }
 
